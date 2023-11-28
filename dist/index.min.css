@@ -1,6 +1,6 @@
-/*!*****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/lesson_29/lesson_29.scss ***!
-  \*****************************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/index.scss ***!
+  \***************************************************************************************************************/
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
@@ -11857,4 +11857,32 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(/f61e0a39fb8bf0f501f5.jpeg);
+  background-size: cover;
+}
+.app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 38%, rgba(255, 255, 255, 0.4332107843) 147%);
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+ul li {
+  margin-bottom: 30px;
+  list-style: none;
+  text-align: left;
 }
