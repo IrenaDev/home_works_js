@@ -7,8 +7,7 @@ sendNameBtn.addEventListener("click", () => {
   const name = document.getElementById("floatingInputName").value;
 
   if (name) {
+    console.log(name);
   } else {
-      
   }
-  console.log(name);
 });
