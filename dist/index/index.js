@@ -580,13 +580,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/index.js":
-/*!****************************!*\
-  !*** ./src/pages/index.js ***!
-  \****************************/
+/***/ "./src/pages/index/index.js":
+/*!**********************************!*\
+  !*** ./src/pages/index/index.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ \"./src/pages/index.scss\");\n\n\n\n//# sourceURL=webpack://starter-template/./src/pages/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ \"./src/pages/index/index.scss\");\n\n\n\n//# sourceURL=webpack://starter-template/./src/pages/index/index.js?");
 
 /***/ }),
 
@@ -600,13 +600,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/index.scss":
-/*!******************************!*\
-  !*** ./src/pages/index.scss ***!
-  \******************************/
+/***/ "./src/pages/index/index.scss":
+/*!************************************!*\
+  !*** ./src/pages/index/index.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/index.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/index/index.scss?");
 
 /***/ })
 
@@ -670,7 +670,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/index/index.js");
 /******/ 	
 /******/ })()
 ;
