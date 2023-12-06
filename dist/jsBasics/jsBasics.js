@@ -580,13 +580,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/lesson_29/lesson_29.js":
-/*!******************************************!*\
-  !*** ./src/pages/lesson_29/lesson_29.js ***!
-  \******************************************/
+/***/ "./src/pages/jsBasics/jsBasics.js":
+/*!****************************************!*\
+  !*** ./src/pages/jsBasics/jsBasics.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _lesson_29_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lesson_29.scss */ \"./src/pages/lesson_29/lesson_29.scss\");\n\n\nvar sendNameBtn = document.getElementById(\"sendName\");\nsendNameBtn.addEventListener(\"click\", function () {\n  var name = document.getElementById(\"floatingInputName\").value;\n  if (name) {\n    console.log(name);\n  } else {}\n});\n\n//# sourceURL=webpack://starter-template/./src/pages/lesson_29/lesson_29.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _jsBasics_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jsBasics.scss */ \"./src/pages/jsBasics/jsBasics.scss\");\n\n\n\n// Vars\n\nvar currentYear = new Date().getFullYear();\nvar sendNameBtn = document.getElementById(\"sendName\");\nvar sendBirthYear = document.getElementById(\"sendBirthYear\");\nvar modalBodyText = document.getElementById(\"modal-text\");\n\n/*---------------------\n  Send Name Form\n\n  is-invalid\n---------------------*/\nsendNameBtn.addEventListener(\"click\", function () {\n  var name = document.getElementById(\"floatingInputName\").value;\n  if (name) {\n    modalBodyText.textContent = \"Hello \".concat(name);\n  } else {\n    modalBodyText.textContent = \"Please tell you name!!!\";\n  }\n});\n\n/*---------------------\n  Send Birth Year Form\n---------------------*/\n\nsendBirthYear.addEventListener(\"click\", function () {\n  var birthYear = document.getElementById(\"floatingInputBirthYear\").value;\n  if (birthYear) {\n    var age = currentYear - birthYear;\n    console.log(age);\n    modalBodyText.textContent = \"You are \".concat(age, \" years old\");\n  } else {\n    //modalBodyText.textContent = `Please tell you name!!!`;\n  }\n});\n\n//# sourceURL=webpack://starter-template/./src/pages/jsBasics/jsBasics.js?");
 
 /***/ }),
 
@@ -600,13 +600,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/lesson_29/lesson_29.scss":
-/*!********************************************!*\
-  !*** ./src/pages/lesson_29/lesson_29.scss ***!
-  \********************************************/
+/***/ "./src/pages/jsBasics/jsBasics.scss":
+/*!******************************************!*\
+  !*** ./src/pages/jsBasics/jsBasics.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/lesson_29/lesson_29.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/jsBasics/jsBasics.scss?");
 
 /***/ })
 
@@ -670,7 +670,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/lesson_29/lesson_29.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/jsBasics/jsBasics.js");
 /******/ 	
 /******/ })()
 ;

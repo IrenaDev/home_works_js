@@ -1,17 +1,20 @@
-const path = require('path');
-const glob = require('glob');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const miniCss = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const autoprefixer = require('autoprefixer');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const glob = require("glob");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const miniCss = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const autoprefixer = require("autoprefixer");
+const CopyPlugin = require("copy-webpack-plugin");
 
 function buildEntryPoints(pattern) {
   const entries = {};
   const files = glob.sync(pattern);
 
-  files.forEach(file => {
-    const entryKey = path.relative('./src/pages', file).replace(/\.js$/, '').replace(/\\/g, '/');
+  files.forEach((file) => {
+    const entryKey = path
+      .relative("./src/pages", file)
+      .replace(/\.js$/, "")
+      .replace(/\\/g, "/");
     entries[entryKey] = path.resolve(__dirname, file);
   });
 
@@ -22,8 +25,8 @@ function generateHtmlPlugins(pattern) {
   const templates = [];
   const files = glob.sync(pattern);
 
-  files.forEach(file => {
-    const basename = path.basename(file, '.html');
+  files.forEach((file) => {
+    const basename = path.basename(file, ".html");
 
     templates.push(
       new HtmlWebpackPlugin({
@@ -38,11 +41,11 @@ function generateHtmlPlugins(pattern) {
 }
 
 module.exports = {
-  entry: buildEntryPoints('./src/**/*.js'),
+  entry: buildEntryPoints("./src/**/*.js"),
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
   },
 
   module: {
@@ -51,15 +54,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ["@babel/preset-env"],
           },
         },
       },
       {
         test: /\.scss$/,
-        use: [miniCss.loader, 'css-loader', 'sass-loader'],
+        use: [miniCss.loader, "css-loader", "sass-loader"],
       },
     ],
   },
@@ -80,15 +83,15 @@ module.exports = {
     //     },
     //   ],
     // }),
-    ...generateHtmlPlugins('./src/**/*.html'),
+    ...generateHtmlPlugins("./src/**/*.html"),
   ],
 
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     open: true,
   },
 
-  mode: 'development',
+  mode: "development",
 };

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./jsBasics.min.css" />
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="pt-5 pb-5">
+          <h1 class="text-center">JavaScript Basics</h1>
+        </header>
+        <!-- Name Form -->
+        <div class="row justify-content-center form-name">
+          <div class="col-12 col-lg-5">
+            <form action="#" method="get">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputName" placeholder="Your Name" required />
+                <label for="floatingInputName">Enter your name, please</label>
+              </div>
+              <button
+                id="sendName"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Age Form -->
+        <div class="row justify-content-center form-birth-year d-none">
+          <div class="col-12 col-lg-5">
+            <form action="#" method="get">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInputBirthYear"
+                  placeholder="Your Birth Year"
+                  required
+                />
+                <label for="floatingInputBirthYear">Enter your year of birth, please</label>
+              </div>
+              <button
+                id="sendBirthYear"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Perimeter of the square -->
+        <div class="row justify-content-center form-perimeter-square d-none">
+          <div class="col-12 col-lg-5">
+            <form action="#" method="get">
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInputSquareSideLength"
+                  placeholder="The length of the side of the square"
+                  required
+                />
+                <label for="floatingInputSquareSideLength">Enter the length of the side of the square, please</label>
+              </div>
+              <button
+                id="sendPerimeterSquare"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="modal-text"></p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./jsBasics.js"></script>
+  </body>
+</html>
