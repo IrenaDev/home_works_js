@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./functions.min.css" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="pt-5 pb-5">
+          <h1 class="text-center">Functions</h1>
+        </header>
+        <!-- Check number form -->
+        <div class="row justify-content-center form-check-numbers">
+          <div class="col-12">
+            <h2 class="text-center">Check Number</h2>
+          </div>
+          <div class="col-12 col-lg-5 pt-5 pm-5">
+            <form action="#" method="get">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="checkFirstNumber" placeholder="First Number" required />
+                <label for="checkFirstNumber">Enter first number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="checkSecondtNumber"
+                  placeholder="Your Birth Year"
+                  required
+                />
+                <label for="checkSecondNumber">Enter second number</label>
+              </div>
+              <button id="sendCheckNumbers" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Factorial form -->
+        <div class="row justify-content-center form-factorial pt-5 pm-5">
+          <div class="col-12">
+            <h2 class="text-center">Factorial</h2>
+          </div>
+          <div class="col-12 col-lg-5">
+            <form action="#" method="get">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="factorialtNumber" placeholder="Enter number" required />
+                <label for="factorialtNumber">Enter number</label>
+              </div>
+              <button id="sendfactorialtNumber" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- One number form -->
+        <div class="row justify-content-center form-factorial pt-5 pm-5">
+          <div class="col-12">
+              <h2 class="text-center">One Number</h2>
+            </div>
+            <div class="col-12 col-lg-5 pt-5 pm-5">
+              <form action="#" method="get">
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="oneNumberFirst" placeholder="Enter first number" required />
+                  <label for="checkFirstNumber">Enter first number</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="oneNumberSecond"
+                    placeholder="Enter second number"
+                    required
+                  />
+                  <label for="checkSecondNumber">Enter second number</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="checkThirdNumber"
+                    placeholder="Enter third number"
+                    required
+                  />
+                  <label for="checkThirdNumber">Enter third number</label>
+                </div>
+                <button id="sendOneNumber" type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="modal-text"></p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./functions.js"></script>
+  </body>
+</html>

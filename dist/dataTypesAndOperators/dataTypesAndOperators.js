@@ -580,13 +580,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/jsBasics/jsBasics.js":
-/*!****************************************!*\
-  !*** ./src/pages/jsBasics/jsBasics.js ***!
-  \****************************************/
+/***/ "./src/pages/dataTypesAndOperators/dataTypesAndOperators.js":
+/*!******************************************************************!*\
+  !*** ./src/pages/dataTypesAndOperators/dataTypesAndOperators.js ***!
+  \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _jsBasics_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./jsBasics.scss */ \"./src/pages/jsBasics/jsBasics.scss\");\n\n\n\n// Vars\n\nvar currentYear = new Date().getFullYear();\nvar formName = document.querySelector('.form-name');\nvar formBirthYear = document.querySelector('.form-birth-year');\nvar formPerimeterSquare = document.querySelector('.form-perimeter-square');\nvar sendNameBtn = document.getElementById('sendName');\nvar sendBirthYear = document.getElementById('sendBirthYear');\nvar sendPerimeterSquare = document.getElementById('sendPerimeterSquare');\nvar modalBodyText = document.getElementById('modal-text');\n\n/*---------------------\n  Send Name Form\n---------------------*/\n\nsendNameBtn.addEventListener('click', function () {\n  var name = document.getElementById('floatingInputName').value;\n  if (name) {\n    modalBodyText.textContent = \"Hello \".concat(name);\n    formName.classList.add('d-none');\n    formBirthYear.classList.remove('d-none');\n  } else {\n    modalBodyText.textContent = \"The field is not filled! Enter your name, please!!!\";\n  }\n});\n\n/*---------------------\n  Send Birth Year Form\n---------------------*/\n\nsendBirthYear.addEventListener('click', function () {\n  var birthYear = document.getElementById('floatingInputBirthYear').value;\n  if (birthYear) {\n    var age = currentYear - birthYear;\n    modalBodyText.textContent = \"You are \".concat(age, \" years old\");\n    formBirthYear.classList.add('d-none');\n    formPerimeterSquare.classList.remove('d-none');\n  } else {\n    modalBodyText.textContent = \"The field is not filled! Enter your year of birth, please\";\n  }\n});\n\n/*----------------------------\n  Send Perimeter Square  Form\n-----------------------------*/\n\nsendPerimeterSquare.addEventListener('click', function () {\n  var squareSideLength = document.getElementById('floatingInputSquareSideLength').value;\n  if (squareSideLength) {\n    var perimeterSquare = squareSideLength * 4;\n    modalBodyText.textContent = \"The perimeter of square are \".concat(perimeterSquare);\n  } else {\n    modalBodyText.textContent = \"The field is not filled! Enter the length of the side of the square, please\";\n  }\n});\n\n//# sourceURL=webpack://starter-template/./src/pages/jsBasics/jsBasics.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _dataTypesAndOperators_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dataTypesAndOperators.scss */ \"./src/pages/dataTypesAndOperators/dataTypesAndOperators.scss\");\n\n\n\n//# sourceURL=webpack://starter-template/./src/pages/dataTypesAndOperators/dataTypesAndOperators.js?");
 
 /***/ }),
 
@@ -600,13 +600,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/jsBasics/jsBasics.scss":
-/*!******************************************!*\
-  !*** ./src/pages/jsBasics/jsBasics.scss ***!
-  \******************************************/
+/***/ "./src/pages/dataTypesAndOperators/dataTypesAndOperators.scss":
+/*!********************************************************************!*\
+  !*** ./src/pages/dataTypesAndOperators/dataTypesAndOperators.scss ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/jsBasics/jsBasics.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://starter-template/./src/pages/dataTypesAndOperators/dataTypesAndOperators.scss?");
 
 /***/ })
 
@@ -670,7 +670,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/jsBasics/jsBasics.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/dataTypesAndOperators/dataTypesAndOperators.js");
 /******/ 	
 /******/ })()
 ;
