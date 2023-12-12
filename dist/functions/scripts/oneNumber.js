@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/pages/functions/scripts/factorial.js":
+/***/ "./src/pages/functions/scripts/oneNumber.js":
 /*!**************************************************!*\
-  !*** ./src/pages/functions/scripts/factorial.js ***!
+  !*** ./src/pages/functions/scripts/oneNumber.js ***!
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getFactorial: () => (/* binding */ getFactorial)\n/* harmony export */ });\nfunction getFactorial() {\n  var btn = document.getElementById('sendfactorialtNumber');\n  var modalBodyText = document.getElementById('modal-text');\n\n  /*---------------------------------\n    Galculation factorial\n  ---------------------------------*/\n  function factorial(num) {\n    var result = 0;\n    if (isNaN(num)) {\n      throw new Error(\"Not a number\");\n    }\n    if (num < 0) {\n      throw new Error(\"error\");\n    }\n    var calculation = function calculation(n) {\n      return result = n ? n * calculation(n - 1) : 1;\n    };\n    calculation(num);\n    modalBodyText.textContent = \"The factorial number \".concat(num, \" is \").concat(result);\n\n    // For test\n    console.log(\"The factorial number \".concat(num, \" is \").concat(result));\n  }\n\n  /*---------------------------------\n    Get numbers from DOM\n  ---------------------------------*/\n  btn.addEventListener('click', function () {\n    var factorialtNumber = document.getElementById('factorialtNumber').value;\n    factorial(factorialtNumber);\n  });\n}\n\n//# sourceURL=webpack://starter-template/./src/pages/functions/scripts/factorial.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   oneNumber: () => (/* binding */ oneNumber)\n/* harmony export */ });\nfunction oneNumber() {\n  // Vars\n  var btn = document.getElementById('sendOneNumber');\n  var modalBodyText = document.getElementById('modal-text');\n  function getNumbers(numb1, numb2, numb3) {\n    modalBodyText.textContent = parseInt(numb1.toString() + numb2.toString() + numb3.toString());\n\n    // For test\n    console.log(parseInt(numb1.toString() + numb2.toString() + numb3.toString()));\n  }\n\n  /*---------------------------------\n    Get numbers from DOM\n  ---------------------------------*/\n  btn.addEventListener('click', function () {\n    var firstNumber = document.getElementById('oneNumberFirst').value;\n    var secondNumber = document.getElementById('oneNumberSecond').value;\n    var thirdNumber = document.getElementById('checkThirdNumber').value;\n    getNumbers(firstNumber, secondNumber, thirdNumber);\n  });\n}\n\n//# sourceURL=webpack://starter-template/./src/pages/functions/scripts/oneNumber.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/pages/functions/scripts/factorial.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/pages/functions/scripts/oneNumber.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
